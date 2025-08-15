@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gemini Vision Demo</title>
+  </head>
+  <body>
+    <div id="api-banner"></div>
+    <main>
+      <h1>Gemini Vision Demo</h1>
+      <form>
+        <label>
+          Image URL
+          <input name="chosen-image" type="url" placeholder="https://example.com/image.jpg" required />
+        </label>
+        <label>
+          Prompt
+          <input name="prompt" type="text" placeholder="Describe the image" />
+        </label>
+        <button type="submit">Generate</button>
+      </form>
+      <section class="output"></section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

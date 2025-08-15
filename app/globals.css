@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fashion editorial theme */
+:root {
+	--bg: #0a0b12;
+	--panel: #0e1326;
+	--ink: #eaeaff;
+	--ink-muted: #bfc7ff;
+	--accent: #e94f64; /* fashion pop */
+	--accent-2: #6dd3ff; /* cool contrast */
+	--border: #1c2242;
+	--shadow: 0 10px 40px rgba(0,0,0,0.35);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+	margin: 0; padding: 0; background: radial-gradient(1000px 600px at 10% -10%, #10163a 0%, var(--bg) 55%);
+	color: var(--ink);
+	font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+	letter-spacing: 0.2px;
+}
+
+main { max-width: 960px; margin: 0 auto; padding: 28px; }
+h1 {
+	font-family: var(--font-display), serif;
+	font-size: clamp(1.8rem, 1.2rem + 2vw, 3rem);
+	margin: 0 0 20px;
+	line-height: 1.05;
+	letter-spacing: 0.5px;
+}
+
+.hero {
+	display: grid; gap: 8px; margin-bottom: 16px; padding-bottom: 8px;
+	border-bottom: 1px solid var(--border);
+}
+.hero p { color: var(--ink-muted); margin: 0; }
+
+.badge {
+	display: inline-block; padding: 6px 10px; border: 1px solid var(--border);
+	background: linear-gradient(180deg, #0f1430, #0c1028);
+	border-radius: 999px; color: var(--ink-muted); font-size: 12px; text-transform: uppercase;
+}
